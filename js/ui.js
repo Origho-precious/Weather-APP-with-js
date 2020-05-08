@@ -4,12 +4,12 @@ const w_desc = document.getElementById('w-desc');
 const w_loc = document.getElementById('w-location');
 const w_temp = document.getElementById('w-temp');
 const icon = document.getElementById('icon');
-const alert = document.querySelector('.msg');
+const alert = document.querySelector('#msg');
 
 alert.style.display = 'none'; 
 
 class UI{
-    showLocation(data){
+    showLocation(data){ 
         let name = data.name;
         let country = data.sys.country;
         w_loc.textContent = `${name}, ${country}`;
