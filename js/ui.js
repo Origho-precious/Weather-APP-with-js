@@ -27,4 +27,15 @@ class UI{
         let temp = (data.main.temp - 273.15).toFixed(0);
         w_temp.innerHTML = `${temp}<span>&#8451;</span>`;
     }
+
+    static changeBg(){
+        const date = new Date().getUTCHours() + 1;
+        if(date > 5 && date < 19){
+            document.body.style.backgroundImage = "url('../images/DayLight.jpg')"
+        }else{
+            document.body.style.background = "url('../images/Night.jpg')";
+        }
+    }
 }
+
+UI.changeBg();

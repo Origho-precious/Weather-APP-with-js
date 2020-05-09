@@ -1,6 +1,6 @@
 
 body{
-    background: url('../images/Night.jpg');
+    background: url('../images/Night.jpg') no-repeat center center/cover;
 }
 
 .wrapper{
